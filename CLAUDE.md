@@ -23,3 +23,15 @@ Please consult these resources before proposing any architectural decisions:
 
 ## 💬 Output Format
 When providing code, specify the exact file path (e.g., `my-theme/parts/product-summary.html`). Always explain *why* a specific Block or Pattern is being used over a traditional PHP template.
+
+
+## Testing
+1. When implementing a feature based off of an image mockup, use google chrome from the applications folder set the browser dimentions to the width and height of the mockup, capture a screenshot, and compare that screenshot directly to the mockup with imagemagick. If the image is less than 85% similar go back and try and modify the code so that way the website matches the mockup closer. If a change you make makes the similarity go down, undo it, and try something else.
+
+the chrome executable is located at /Applications/Google Chrome.app
+
+This website can be found by visiting http://hartwork.local/
+
+use this for google-chrome documentation https://peter.sh/experiments/chromium-command-line-switches/
+use this for documentation for comparing images with imageMagick. https://imagemagick.org/script/compare.php#gsc.tab=0
+

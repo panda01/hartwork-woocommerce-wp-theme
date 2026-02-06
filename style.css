@@ -1,10 +1,13 @@
 /*
-Theme Name: HartWork Storefront
+Theme Name: HartWork 2026
 Version: 1.0
-Description: HartWork theme for Storefront.
+Description: HartWork block theme for WooCommerce.
 Author: khasan222@gmail.com
 Author URI: https://github.com/panda01
-Template: storefront
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+Text Domain: hartwork-2026
 */
 
 /*
@@ -196,4 +199,120 @@ ins {
 /* Fix the hardcoded wide width value in the stylesheet for TT3 */
 .woocommerce.woocommerce-page main {
 	max-width: calc(var(--wp--style--global--wide-size) + var(--wp--style--root--padding-right) + var(--wp--style--root--padding-left));
+}
+
+/* ==========================================================================
+   Splash / Front Page Styles
+   ========================================================================== */
+
+/* Header layout */
+.splash-header .splash-logo {
+	margin: 0;
+}
+
+.splash-header-email a {
+	text-decoration: none !important;
+}
+
+/* Hero product image */
+.splash-hero-image {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.splash-bottom-section {
+	margin-top: 0 !important;
+}
+
+.splash-hero-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+}
+
+/* Divider with heart icon */
+.splash-divider {
+	align-items: center;
+}
+
+.splash-divider .wp-block-separator.splash-sep {
+	width: 200px;
+	flex-shrink: 0;
+	border: none;
+	border-top: 1px solid var(--wp--preset--color--tertiary);
+	background: transparent !important;
+	height: 0;
+}
+
+.splash-heart-icon {
+	margin: 0;
+	flex-shrink: 0;
+}
+
+/* Email signup form */
+.splash-email-form {
+	margin-top: var(--wp--preset--spacing--40);
+}
+
+.splash-email-form-inner {
+	display: flex;
+	justify-content: center;
+	max-width: 460px;
+	margin: 0 auto;
+	border: 1px solid var(--wp--preset--color--tertiary);
+	border-radius: 4px;
+	overflow: hidden;
+	background: #fff;
+}
+
+.splash-email-form-inner input[type="email"] {
+	flex: 1;
+	border: none;
+	padding: 0.75em 1em;
+	font-size: 0.875rem;
+	font-family: inherit;
+	color: var(--wp--preset--color--contrast);
+	outline: none;
+	background: transparent;
+	min-width: 0;
+}
+
+.splash-email-form-inner input[type="email"]::placeholder {
+	color: #999;
+}
+
+.splash-email-form-inner button[type="submit"] {
+	background-color: var(--wp--preset--color--accent);
+	color: #fff;
+	border: none;
+	padding: 0.75em 1.5em;
+	font-size: 0.875rem;
+	font-family: inherit;
+	font-weight: 500;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color 0.2s;
+}
+
+.splash-email-form-inner button[type="submit"]:hover {
+	background-color: #8a1019;
+}
+
+/* Notify Me outline button */
+.splash-notify-btn .wp-block-button__link {
+	color: var(--wp--preset--color--contrast) !important;
+	border-color: var(--wp--preset--color--contrast) !important;
+	background: transparent !important;
+}
+
+/* Front page warm background and remove root padding */
+body.home {
+	background-color: #f9f4f1;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+body.home .splash-header {
+	background-color: #f9f4f1 !important;
 }
