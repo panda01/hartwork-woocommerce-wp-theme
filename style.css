@@ -250,53 +250,94 @@ ins {
 	flex-shrink: 0;
 }
 
-/* Email signup form */
-.splash-email-form {
+/* MailPoet email signup form in splash bottom section */
+.splash-bottom-section .mailpoet_form {
 	margin-top: var(--wp--preset--spacing--40);
 }
 
-.splash-email-form-inner {
-	display: flex;
-	justify-content: center;
+#mailpoet_form_1 form.mailpoet_form {
+	display: flex !important;
+	flex-wrap: nowrap;
 	max-width: 460px;
 	margin: 0 auto;
+	padding: 0 !important;
 	border: 1px solid var(--wp--preset--color--tertiary);
 	border-radius: 4px;
 	overflow: hidden;
 	background: #fff;
+	align-items: stretch;
 }
 
-.splash-email-form-inner input[type="email"] {
+#mailpoet_form_1 .mailpoet_paragraph {
+	margin-bottom: 0 !important;
+	line-height: normal;
+}
+
+#mailpoet_form_1 .mailpoet_paragraph:first-of-type {
 	flex: 1;
-	border: none;
-	padding: 0.75em 1em;
-	font-size: 0.875rem;
+}
+
+#mailpoet_form_1 .mailpoet_text {
+	border: none !important;
+	padding: 0.75em 1em !important;
+	font-size: 0.875rem !important;
 	font-family: inherit;
 	color: var(--wp--preset--color--contrast);
 	outline: none;
-	background: transparent;
-	min-width: 0;
+	background: transparent !important;
+	width: 100% !important;
+	box-sizing: border-box;
+	margin: 0 !important;
+	display: block !important;
 }
 
-.splash-email-form-inner input[type="email"]::placeholder {
+#mailpoet_form_1 .mailpoet_text::placeholder {
 	color: #999;
 }
 
-.splash-email-form-inner button[type="submit"] {
-	background-color: var(--wp--preset--color--accent);
-	color: #fff;
-	border: none;
-	padding: 0.75em 1.5em;
+#mailpoet_form_1 .mailpoet_submit {
+	background-color: var(--wp--preset--color--accent) !important;
+	color: #fff !important;
+	border: none !important;
+	padding: 0.75em 1.5em !important;
 	font-size: 0.875rem;
 	font-family: inherit;
 	font-weight: 500;
 	cursor: pointer;
 	white-space: nowrap;
 	transition: background-color 0.2s;
+	border-radius: 0 !important;
+	width: 100% !important;
+	line-height: normal;
+	margin: 0 !important;
+	height: 100%;
+	box-sizing: border-box;
 }
 
-.splash-email-form-inner button[type="submit"]:hover {
-	background-color: #8a1019;
+#mailpoet_form_1 .mailpoet_submit:hover {
+	background-color: #8a1019 !important;
+}
+
+#mailpoet_form_1 .mailpoet_form_loading {
+	display: none;
+}
+
+#mailpoet_form_1 .mailpoet_form_successfully_send .mailpoet_paragraph {
+	display: none;
+}
+#mailpoet_form_1 .mailpoet_message {
+	display: none;
+}
+#mailpoet_form_1 .mailpoet_form_successfully_send .mailpoet_message {
+	display: block;
+}
+.mailpoet_form.mailpoet_form_successfully_send .mailpoet_validate_success {
+	position: static;
+	transform: none;
+}
+
+#mailpoet_form_1 .mailpoet_hp_email_label {
+	display: none !important;
 }
 
 /* Notify Me outline button */

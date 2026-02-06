@@ -100,12 +100,7 @@ $heart_url   = esc_url( get_template_directory_uri() . '/assets/images/heart-ico
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
-<form class="splash-email-form" action="#" method="post">
-	<div class="splash-email-form-inner">
-		<input type="email" name="email" placeholder="Enter your email address" required />
-		<button type="submit">Spread the Love</button>
-	</div>
-</form>
+<?php echo do_shortcode( '[mailpoet_form id="1"]' ); ?>
 <!-- /wp:html -->
 
 </div>
