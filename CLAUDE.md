@@ -26,7 +26,7 @@ When providing code, specify the exact file path (e.g., `my-theme/parts/product-
 
 
 ## Testing
-1. When implementing a feature based off of an image mockup, use google chrome from the applications folder set the browser dimentions to the width and height of the mockup, capture a screenshot, and compare that screenshot directly to the mockup with imagemagick. If the image is less than 85% similar go back and try and modify the code so that way the website matches the mockup closer. If a change you make makes the similarity go down, undo it, and try something else.
+When implementing a feature based off of an image mockup, use google chrome from the applications folder set the browser dimensions to the width and height of the mockup, capture a screenshot, and compare that screenshot directly to the mockup with imagemagick. If the image is less than 90% similar go back and try and modify the code so that way the website matches the mockup closer. If a change you make makes the similarity go down, undo it, and try something else. be mindful the fonts will never be laid out exactly like the mockup, please use blur at a max of 10% to see if the images are closer matching. If you spend more than 10 cycles screenshotting and comparing, stop and show the user how similar they are mentioning any problems
 
 the chrome executable is located at /Applications/Google Chrome.app
 
