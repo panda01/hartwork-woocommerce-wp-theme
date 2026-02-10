@@ -42,11 +42,11 @@ $heart_url   = esc_url( get_template_directory_uri() . '/assets/images/heart-ico
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)">
 
 <!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"400","lineHeight":"1.15","fontSize":"2.75rem"}},"fontFamily":"dm-serif-text"} -->
-<h1 class="wp-block-heading has-text-align-center has-dm-serif-text-font-family" style="font-size:2.75rem;font-style:normal;font-weight:400;line-height:1.15">Spread Love. Do the Hart Work.</h1>
+<h1 class="wp-block-heading has-text-align-center has-dm-serif-text-font-family" style="font-size:2.75rem;font-style:normal;font-weight:400;line-height:1.15">Always Live With Love. Do the HartWork.</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--40)">Uplifting apparel to help you live with love and lead with heart.</p>
+<p class="has-text-align-center" style="margin-top:var(--wp--preset--spacing--40)">Uplifting apparel to help you live with love and lead with Hart.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
