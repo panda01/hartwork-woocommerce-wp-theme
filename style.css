@@ -466,3 +466,127 @@ p.stock.stock-low {
 	font-weight: 500;
 	text-align: center;
 }
+
+/* ==========================================================================
+   Product Page Layout
+   ========================================================================== */
+
+/* Product columns */
+.product-layout {
+	gap: var(--wp--preset--spacing--70);
+}
+
+/* Product info column */
+.product-info-col .wp-block-post-title {
+	font-size: 1.75rem;
+	margin-bottom: 0.25em;
+}
+
+.product-info-col .wc-block-components-product-price {
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+/* Shipping note */
+.product-shipping-note {
+	color: #777;
+	text-align: center;
+	border-top: 1px solid var(--wp--preset--color--tertiary);
+	padding-top: var(--wp--preset--spacing--40);
+}
+
+/* Tighten variation form spacing */
+.product-info-col .variations {
+	margin-bottom: 0.5em;
+}
+
+.product-info-col .woocommerce-variation-add-to-cart {
+	margin-top: 0.5em;
+}
+
+/* Add to cart button — full width on product page */
+.product-info-col .single_add_to_cart_button {
+	width: 100%;
+	text-align: center;
+	padding: 0.9em 1.5em !important;
+}
+
+/* Variation dropdown styling */
+.product-info-col .variations select {
+	padding: 0.5em 0.75em;
+	border: 1px solid var(--wp--preset--color--tertiary);
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-family: inherit;
+	background: #fff;
+}
+
+.product-info-col .variations td.label label {
+	font-weight: 500;
+	font-size: 0.875rem;
+}
+
+.product-info-col .reset_variations {
+	font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   Product Accordion Sections
+   ========================================================================== */
+
+.product-accordions {
+	margin-top: 0;
+}
+
+.product-accordion-item {
+	border-bottom: 1px solid var(--wp--preset--color--tertiary);
+	padding: 0;
+}
+
+.product-accordion-item summary {
+	cursor: pointer;
+	padding: 1em 0;
+	font-size: 0.938rem;
+	font-weight: 500;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product-accordion-item summary::-webkit-details-marker {
+	display: none;
+}
+
+.product-accordion-item summary::after {
+	content: "\203A";
+	font-size: 1.25rem;
+	transition: transform 0.2s;
+	transform: rotate(90deg);
+	line-height: 1;
+}
+
+.product-accordion-item[open] summary::after {
+	transform: rotate(270deg);
+}
+
+.product-accordion-item p {
+	padding-bottom: 1em;
+	color: #666;
+	line-height: 1.6;
+}
+
+/* ==========================================================================
+   Product Promo Section
+   ========================================================================== */
+
+.product-promo-section {
+	margin-top: var(--wp--preset--spacing--50);
+}
+
+.product-promo-image img {
+	border-radius: 4px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
