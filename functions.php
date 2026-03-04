@@ -86,3 +86,22 @@ if ( ! function_exists( 'kiosko_woocommerce_init' ) ) :
 endif;
 
 add_action( 'after_setup_theme', 'kiosko_woocommerce_init' );
+
+/**
+ * Customize product stock availability display.
+ *
+ * Hides exact stock counts. Only shows "Stock low" when quantity is below 5.
+ */
+function kiosko_custom_stock_availability( $availability, $product ) {
+	if ( $product->is_in_stock() ) {
+		$stock_qty = $product->get_stock_quantity();
+		if ( null !== $stock_qty && $stock_qty > 0 && $stock_qty < 5 ) {
+			$availability['availability'] = __( 'Stock low', 'kiosko' );
+			$availability['class']        = 'in-stock stock-low';
+		} elseif ( null !== $stock_qty && $stock_qty > 0 ) {
+			$availability['availability'] = '';
+		}
+	}
+	return $availability;
+}
+add_filter( 'woocommerce_get_availability', 'kiosko_custom_stock_availability', 10, 2 );

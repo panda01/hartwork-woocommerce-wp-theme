@@ -206,8 +206,16 @@ ins {
    ========================================================================== */
 
 /* Header layout */
-.splash-header .splash-logo {
+.splash-header > .alignwide {
+	position: relative;
+}
+
+.splash-header .splash-logo,
+.splash-header .wp-block-site-logo {
 	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .splash-header-email a {
@@ -295,27 +303,41 @@ ins {
 	color: #999;
 }
 
-#mailpoet_form_1 .mailpoet_submit {
+/* ==========================================================================
+   Shared CTA Button Style
+   Used by: MailPoet submit, WooCommerce add-to-cart buttons
+   ========================================================================== */
+
+#mailpoet_form_1 .mailpoet_submit,
+.wc-block-components-product-button__button,
+.single_add_to_cart_button {
 	background-color: var(--wp--preset--color--accent) !important;
 	color: #fff !important;
 	border: none !important;
 	padding: 0.75em 1.5em !important;
-	font-size: 0.875rem;
+	font-size: 0.875rem !important;
 	font-family: inherit;
 	font-weight: 500;
 	cursor: pointer;
 	white-space: nowrap;
 	transition: background-color 0.2s;
 	border-radius: 0 !important;
-	width: 100% !important;
 	line-height: normal;
-	margin: 0 !important;
-	height: 100%;
 	box-sizing: border-box;
 }
 
-#mailpoet_form_1 .mailpoet_submit:hover {
+#mailpoet_form_1 .mailpoet_submit:hover,
+.wc-block-components-product-button__button:hover,
+.single_add_to_cart_button:hover {
 	background-color: #8a1019 !important;
+	color: #fff !important;
+}
+
+/* MailPoet-specific overrides (form layout needs) */
+#mailpoet_form_1 .mailpoet_submit {
+	width: 100% !important;
+	margin: 0 !important;
+	height: 100%;
 }
 
 #mailpoet_form_1 .mailpoet_form_loading {
@@ -347,13 +369,100 @@ ins {
 	background: transparent !important;
 }
 
-/* Front page warm background and remove root padding */
+/* Splash header inherits site background */
+.splash-header {
+	background-color: transparent !important;
+}
+
+/* Remove root padding on front page for full-width hero */
 body.home {
-	background-color: #f9f4f1;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
 
-body.home .splash-header {
-	background-color: #f9f4f1 !important;
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+
+/* Email signup section */
+.footer-signup {
+	text-align: center;
+}
+
+.footer-signup .has-dm-serif-text-font-family em {
+	font-style: italic;
+}
+
+/* Nav bar section */
+.footer-nav-row {
+	align-items: center;
+}
+
+.footer-heart-icon {
+	margin: 0;
+	flex-shrink: 0;
+}
+
+.footer-heart-icon img {
+	display: block;
+}
+
+.footer-links {
+	flex: 1;
+	text-align: center;
+}
+
+.footer-links a {
+	text-decoration: none !important;
+	color: var(--wp--preset--color--contrast);
+}
+
+.footer-links a:hover {
+	text-decoration: underline !important;
+}
+
+.footer-social-icons {
+	flex-shrink: 0;
+}
+
+/* Copyright section */
+.footer-copyright .wp-block-separator {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.4;
+}
+
+.footer-copyright p {
+	color: #777;
+}
+
+.footer-copyright a {
+	text-decoration: none !important;
+	color: #777 !important;
+}
+
+.footer-copyright a:hover {
+	text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   Product Page — Out of Stock Notice
+   ========================================================================== */
+
+p.stock.stock-low {
+	color: var(--wp--preset--color--accent);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 500;
+}
+
+.wc-block-add-to-cart-form p.stock.out-of-stock {
+	background-color: #fbf5f4;
+	border: 1px solid var(--wp--preset--color--tertiary);
+	border-radius: 4px;
+	padding: 1em 1.25em;
+	font-size: var(--wp--preset--font-size--small);
+	color: var(--wp--preset--color--accent);
+	font-weight: 500;
+	text-align: center;
 }

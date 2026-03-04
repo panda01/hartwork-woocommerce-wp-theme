@@ -46,7 +46,7 @@
 			"text": true
 		},
 		"layout": {
-			"contentSize": "586px",
+			"contentSize": "750px",
 			"definitions": {
 				"constrained": {
 					"baseStyles": [
@@ -1180,7 +1180,7 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--base)",
+			"background": "#f9f4f1",
 			"text": "var(--wp--preset--color--contrast)"
 		},
 		"elements": {
@@ -1256,7 +1256,7 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|oswald",
+					"fontFamily": "var:preset|font-family|dm-serif-text",
 					"fontStyle": "normal",
 					"fontWeight": "400",
 					"lineHeight": "1.125",
