@@ -1298,6 +1298,10 @@
 			"name": "header"
 		},
 		{
+			"area": "header",
+			"name": "checkout-header"
+		},
+		{
 			"area": "footer",
 			"name": "footer"
 		}

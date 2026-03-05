@@ -9,14 +9,15 @@
 declare( strict_types = 1 );
 
 $heart_url = esc_url( get_template_directory_uri() . '/assets/images/heart-icon.png' );
+$logo_url  = esc_url( get_template_directory_uri() . '/assets/mockups/logo.png' );
 ?>
 
 <!-- wp:group {"style":{"color":{"background":"#fbf5f4"},"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"0px","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"600px"},"className":"footer-signup"} -->
 <div class="wp-block-group footer-signup has-background" style="background-color:#fbf5f4;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--50);padding-bottom:0px;padding-left:var(--wp--preset--spacing--50)">
 
-<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"2.5rem"}},"fontFamily":"dm-serif-text"} -->
-<p class="has-text-align-center has-dm-serif-text-font-family" style="font-size:2.5rem"><em>Hartwork</em></p>
-<!-- /wp:paragraph -->
+<!-- wp:image {"width":160,"sizeSlug":"full","align":"center","className":"splash-logo footer-logo"} -->
+<figure class="wp-block-image aligncenter size-full is-resized splash-logo footer-logo"><img src="<?php echo $logo_url; ?>" alt="Hartwork" style="width:160px"/></figure>
+<!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontStyle":"normal","fontWeight":"400","fontSize":"1.6rem"},"spacing":{"margin":{"top":"var:preset|spacing|40"}}},"fontFamily":"dm-serif-text"} -->
 <h2 class="wp-block-heading has-text-align-center has-dm-serif-text-font-family" style="margin-top:var(--wp--preset--spacing--40);font-size:1.6rem;font-style:normal;font-weight:400">Spread Love. Stay connected.</h2>
